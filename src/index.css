@@ -1,52 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #2fa892;
+  --hover-color: #84d1c3;
+  --grey: #cccccc;
+  --background-color: #f4f4f4;
+  --text-color: #333333;
+  --text-light-color: #626566;
+  --white: #ffffff;
+  --error-color: #ff4d4f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f4f4f4;
+  background: var(--background-color);
+  color: var(--text-color)
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.App {
+h1 {
+  font-size: 48px;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: space-between;
-  margin: 20px 0;
-}
-
-.selected {
-  color: #333333;
-  font-size: 26px;
-  font-weight: 700;
-  margin: 10px 20px 0 0;
-}
-
-.person-info:hover {
-  padding: 30px;
-  border: 2px solid pink;
-}
-
-.firstNameLastName {
-  padding: 0 0 10px;
-  color: #333333;
-  font-size: 26px;
   font-weight: 700;
 }
 
-.jobTitle {
-  padding: 0 0 20px;
-  color: #e74c3c;
-  font-size: 20px;
-  font-weight: 400;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.emailAddress {
-  color: #666666;
-  font-size: 14px;
-  line-height: 1.8em;
-}

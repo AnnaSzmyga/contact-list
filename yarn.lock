@@ -2319,6 +2319,30 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.57.1.tgz#de633db3ec2ef6a3c89e2f19038063e8a122e2c2"
   integrity sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==
 
+"@fortawesome/fontawesome-common-types@7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-7.1.0.tgz#a4e0b7e40073d5fdef41182da1bc216a05875659"
+  integrity sha512-l/BQM7fYntsCI//du+6sEnHOP6a74UixFyOYUyz2DLMXKx+6DEhfR3F2NYGE45XH1JJuIamacb4IZs9S0ZOWLA==
+
+"@fortawesome/fontawesome-svg-core@^7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-7.1.0.tgz#b0a45363a4e95ec985130393c0b1b95717ef0760"
+  integrity sha512-fNxRUk1KhjSbnbuBxlWSnBLKLBNun52ZBTcs22H/xEEzM6Ap81ZFTQ4bZBxVQGQgVY0xugKGoRcCbaKjLQ3XZA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "7.1.0"
+
+"@fortawesome/free-solid-svg-icons@^7.1.0":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-7.1.0.tgz#cb9d149cefd3419a7a3fd041106e3a2315463e3e"
+  integrity sha512-Udu3K7SzAo9N013qt7qmm22/wo2hADdheXtBfxFTecp+ogsc0caQNRKEb7pkvvagUGOpG9wJC1ViH6WXs8oXIA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "7.1.0"
+
+"@fortawesome/react-fontawesome@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-3.1.0.tgz#bb22f49622574a80ee74213ad8c68107f3f47e64"
+  integrity sha512-5OUQH9aDH/xHJwnpD4J7oEdGvFGJgYnGe0UebaPIdMW9UxYC/f5jv2VjVEgnikdJN0HL8yQxp9Nq+7gqGZpIIA==
+
 "@humanwhocodes/config-array@^0.13.0":
   version "0.13.0"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.13.0.tgz#fb907624df3256d04b9aa2df50d7aa97ec648748"
@@ -2897,6 +2921,18 @@
     "@svgr/plugin-jsx" "^5.5.0"
     "@svgr/plugin-svgo" "^5.5.0"
     loader-utils "^2.0.0"
+
+"@tanstack/query-core@5.90.10":
+  version "5.90.10"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-5.90.10.tgz#2704b038277fb41e631f356e7428951b5354ed13"
+  integrity sha512-EhZVFu9rl7GfRNuJLJ3Y7wtbTnENsvzp+YpcAV7kCYiXni1v8qZh++lpw4ch4rrwC0u/EZRnBHIehzCGzwXDSQ==
+
+"@tanstack/react-query@^5.90.10":
+  version "5.90.10"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-5.90.10.tgz#dc2d4acbe1c06b708ccaeed43a26ad56bc5d1718"
+  integrity sha512-BKLss9Y8PQ9IUjPYQiv3/Zmlx92uxffUOX8ZZNoQlCIZBJPT5M+GOMQj7xislvVQ6l1BstBjcX0XB/aHfFYVNw==
+  dependencies:
+    "@tanstack/query-core" "5.90.10"
 
 "@testing-library/jest-dom@^6.9.1":
   version "6.9.1"
@@ -4488,6 +4524,11 @@ cliui@^8.0.1:
     string-width "^4.2.0"
     strip-ansi "^6.0.1"
     wrap-ansi "^7.0.0"
+
+clsx@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.1.1.tgz#eed397c9fd8bd882bfb18deab7102049a2f32999"
+  integrity sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==
 
 co@^4.6.0:
   version "4.6.0"

@@ -1,0 +1,113 @@
+.person-info {
+    padding: 32px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+    margin: 10px 0;
+    background: var(--white);
+    cursor: pointer;
+    border-radius: 12px;
+    border: 1px solid transparent;
+}
+
+.person-info > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.person-info-content {
+    display:flex;
+}
+
+.small-item {
+    padding: 16px;
+}
+.person-info:hover {
+    border: 1px solid var(--hover-color);
+}
+
+.selected-item {
+    border: 1px solid var(--primary-color);
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+    border: 2px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.first-name-last-name {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.job-title {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.email {
+    color: var(--text-light-color);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+.check-icon {
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-icon svg path {
+    fill: var(--white);
+    width: 16px;
+    height: 16px;
+}
+
+.small-item .avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    font-size: 12px;
+}
+
+.small-item .first-name-last-name {
+    font-size: 20px;
+}
+
+.small-item .job-title {
+    font-size: 12px;
+}
+
+.small-item .email {
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.small-item .check-icon {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+}
+
+.small-item .check-icon svg path {
+    fill: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}

@@ -1,0 +1,111 @@
+@keyframes fadeInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.selected-items-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background-color: var(--white);
+    overflow-y: auto;
+    border-right: 1px solid var(--grey);
+}
+
+@media (max-width: 768px) {
+    .selected-items-wrapper {
+        width: 80%;
+        z-index: 100;
+        animation: fadeInFromLeft 0.5s ease-out;
+        border: none;
+    }
+}
+
+.selected-items-wrapper ul {
+    padding: 16px;
+}
+
+.open-icon-wrapper {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.open-icon-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.open-icon {
+    color: var(--white);
+    font-size: 32px;
+}
+
+.items-number {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background-color: var(--white);
+    color: var(--primary-color);
+    border-radius: 50%;
+    border: 1px solid var(--primary-color);
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 99;
+}
+
+.selected-items-heading {
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.selected-items-heading h2 {
+    text-align: center;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.selected-items-heading .close-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--white);
+}
