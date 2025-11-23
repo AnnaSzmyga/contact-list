@@ -15,8 +15,7 @@ type Props = {
 
 export const PersonInfo = React.memo(
   ({ item, isSelected, onItemClick, isSmall = false }: Props) => {
-    const { id, firstNameLastName, jobTitle, emailAddress } = item;
-    console.log("render: ", id);
+    const { firstNameLastName, jobTitle, emailAddress } = item;
     return (
       <li
         className={clsx("person-info", {
